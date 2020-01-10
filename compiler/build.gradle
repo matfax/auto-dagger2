@@ -13,7 +13,7 @@ dependencies {
     compile 'com.github.matfax:processor-workflow:1.0.5'
     compile 'com.google.auto:auto-common:0.10'
     compile 'com.google.guava:guava:27.0.1-jre'
-    compile 'com.squareup:javapoet:1.11.1'
+    compile 'com.squareup:javapoet:1.12.0'
     compile 'org.apache.commons:commons-lang3:3.8.1'
     compile 'javax.inject:javax.inject:1'
 }
