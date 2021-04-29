@@ -1,0 +1,159 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.gradle:build-scan-plugin
+    versions:
+    - "< 2.0.1, >= 2.0.0.a"
+  - dependency-name: com.gradle:build-scan-plugin
+    versions:
+    - "< 2.0.2, >= 2.0.1.a"
+  - dependency-name: com.gradle:build-scan-plugin
+    versions:
+    - "< 2.1, >= 2.0.a"
+  - dependency-name: com.google.dagger:dagger-compiler
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
+  - dependency-name: com.google.dagger:dagger
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+  - dependency-name: com.netflix.nebula:gradle-lint-plugin
+    versions:
+    - 16.17.0
+    - 16.17.1
+    - 16.18.0
+    - 16.19.0
+    - 16.20.0
+    - 16.22.0
+  - dependency-name: org.jetbrains.kotlin:kotlin-stdlib
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+  - dependency-name: org.jetbrains.kotlin:kotlin-gradle-plugin
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+  - dependency-name: com.android.tools.build:gradle
+    versions:
+    - 4.1.2
+  - dependency-name: com.google.guava:guava
+    versions:
+    - 30.1-jre
+  - dependency-name: com.google.auto:auto-common
+    versions:
+    - "0.11"
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
+- package-ecosystem: gradle
+  directory: "/compiler-utils"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.auto:auto-common
+    versions:
+    - "0.11"
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
+- package-ecosystem: gradle
+  directory: "/compiler"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.dagger:dagger
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
+  - dependency-name: com.google.guava:guava
+    versions:
+    - 30.1-jre
+  - dependency-name: com.google.auto:auto-common
+    versions:
+    - "0.11"
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
+- package-ecosystem: gradle
+  directory: "/example-kotlin"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.dagger:dagger
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
+  - dependency-name: com.google.dagger:dagger-compiler
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
+  - dependency-name: org.jetbrains.kotlin:kotlin-stdlib
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+- package-ecosystem: gradle
+  directory: "/example"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.dagger:dagger-compiler
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
+  - dependency-name: com.google.dagger:dagger
+    versions:
+    - 2.31.2
+    - "2.32"
+    - "2.33"
+    - "2.34"
+    - 2.34.1
+    - "2.35"
