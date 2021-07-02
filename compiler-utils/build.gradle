@@ -8,6 +8,6 @@ dependencies {
     compile project(':library')
     compile 'com.github.matfax:processor-workflow:1.0.5'
     compile 'org.apache.commons:commons-lang3:3.8.1'
-    compile 'com.google.auto:auto-common:0.10'
+    compile 'com.google.auto:auto-common:1.1'
     compile 'com.squareup:javapoet:1.11.1'
 }
